@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon bot.js"
-    
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,9 @@
   },
   "homepage": "https://github.com/acquahsamuel/telegram-bot#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "mongodb": "^3.5.9",
     "telegraf": "^3.32.0"
   }
 }
