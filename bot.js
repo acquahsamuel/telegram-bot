@@ -2,8 +2,8 @@ const Telegraf = require('telegraf');
 const axios = require('axios');
 const fs = require('fs');
 
-const dotenv =  require('dotenv');
-dotenv.config({path : './.env'})
+const dotenv = require('dotenv');
+dotenv.config({path: './.env'})
 
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
@@ -66,7 +66,6 @@ bot.command('dogbreeds', (ctx) => {
 })
 
 
-
 bot.command("dog", (ctx) => {
     let input = ctx.message.text.split(" "); // split user input into array
     if (input.length != 2) { // check if user has inputted an argument eg "/dog g"
@@ -104,4 +103,3 @@ bot.command("dog", (ctx) => {
 })
 
 bot.launch();
-
